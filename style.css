@@ -1,0 +1,137 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #f5f8ff;
+}
+
+.wrapper {
+  width: 95%;
+  margin: 0 auto;
+
+}
+
+.Both-input-button-constainer {
+  background-color: #f5f8ff;
+  padding: 1rem;
+  margin-top: 1rem;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+#buttons {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+#search-container {
+  margin: 1em 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#search-container input {
+  background-color: transparent;
+  width: 40%;
+  border-bottom: 2px solid #110f29;
+  padding: 1em 0.3em;
+}
+
+#search-container input:focus {
+  border-bottom-color: #f54d48;
+}
+
+#search-container button {
+  padding: 1em 2em;
+  margin-left: 1em;
+  background-color: #f54d48;
+  color: #ffffff;
+  border-radius: 5px;
+  margin-top: 0.5em;
+}
+
+.button-value {
+  border: 1.5px solid #dba3a1;
+  padding: 1em 2.2em;
+  border-radius: 3em;
+  background-color: transparent;
+  color: #f54d48;
+  cursor: pointer;
+}
+
+.active {
+  background-color: #f54d48;
+  color: #ffffff;
+}
+
+#products {
+  display: grid;
+  /* margin: 20px; */
+  grid-template-columns: auto auto auto;
+  grid-column-gap: 1.5em;
+  padding: 2em 0;
+  /* justify-content: center; Center align the grid */
+  width: 100%;
+  /* Take full width of the screen */
+}
+
+.card {
+  background-color: #ffffff;
+  max-width: 18em;
+  margin-top: 1em;
+  padding: 1em;
+  border-radius: 5px;
+  box-shadow: 1em 2em 2.5em rgba(1, 2, 68, 0.08);
+}
+
+.image-container {
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+  object-fit: contain;
+  height: 15em;
+}
+
+.container {
+  padding-top: 1em;
+  color: #110f29;
+}
+
+.container h5 {
+  font-weight: 500;
+}
+
+.hide {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  img {
+    max-width: 100%;
+    object-fit: contain;
+    height: 10em;
+  }
+
+  .card {
+    max-width: 100%;
+    /* Take full width of the screen */
+    margin-top: 1em;
+  }
+
+  #products {
+    display: flex;
+    /* Switch to a single column layout */
+    flex-direction: column;
+  }
+ 
+}
